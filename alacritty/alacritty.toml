@@ -1,0 +1,44 @@
+#general.import = ["C:/Users/Pavel/AppData/Roaming/alacritty/dracula.toml"]
+
+general.import = ["C:/Users/Pavel/AppData/Roaming/alacritty/github_dark.toml"]
+
+[font]
+# normal = { family = "JetBrainsMono Nerd Font Mono", style = "Regular" }
+# size = 12
+
+normal = { family = "FiraCode Nerd Font Mono", style = "Retina" }
+bold = { family = "FiraCode Nerd Font Mono", style = "Medium" }
+
+
+[window]
+dimensions = { columns = 114, lines = 35}
+padding = { x = 5, y = 5 }
+opacity = 0.98
+title = "Alacritty"
+dynamic_title = false
+decorations_theme_variant = "Dark"
+
+[keyboard]
+[[keyboard.bindings]]
+key = "V"
+mods = "Control"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "T"
+mods = "Control"
+action = "SpawnNewInstance"
+
+
+[selection]
+save_to_clipboard = true
+
+[scrolling]
+multiplier = 10
+history = 10000
+
+
+[terminal]
+[terminal.shell]
+program = "C:\\Windows\\System32\\wsl.exe"
+args = ["--cd", "~"] 
